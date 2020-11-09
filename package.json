@@ -1,7 +1,7 @@
 {
-  "name": "online-course-notes-11ty",
+  "name": "introduction-to-js",
   "version": "1.0.0",
-  "description": "a skeleton project using 11ty to generate course notes",
+  "description": "a short course introduction to JavaScript",
   "main": "index.js",
   "scripts": {
     "reinstall": "rimraf node_modules && npm cache clean && npm install",
@@ -25,14 +25,14 @@
 },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martinjc/online-course-notes-11ty.git"
+    "url": "git+https://github.com/martinjc/introduction-to-js.git"
   },
   "author": "Martin Chorley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/martinjc/online-course-notes-11ty/issues"
+    "url": "https://github.com/martinjc/introduction-to-js/issues"
   },
-  "homepage": "https://github.com/martinjc/online-course-notes-11ty#readme",
+  "homepage": "https://github.com/martinjc/introduction-to-js#readme",
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
