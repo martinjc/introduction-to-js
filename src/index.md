@@ -7,6 +7,8 @@ These notes introduce the JavaScript programming language. We focus on JavaScrip
 
 We look at the syntax and fundamental structures of the language and how we write JavaScript code to solve well understood problems.
 
+{% panopto "48d76b87-cccf-4a84-bf4e-ac68018362c4" %}
+
 ## Further reading
 
 The Mozilla Developer Network (MDN) has some good introductory articles on HTML and CSS. MDN is a very good resource for web developers, it covers a lot of web technologies in depth and is fairly reliable, though given recent changes in Mozilla, it is currently under threat. For now though, it still exists, and so MDN should be one of the first places you look for documentation/tutorials on web technologies.
