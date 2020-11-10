@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Booleans</title>
+</head>
+
+<body>
+    <p>Open the Developer Tools Console to see the output of the JavaScript code</p>
+    <script>
+        let x = 5;
+        let y = -10;
+
+        if (x < y) {
+            console.log("x is smallest");
+        } else if (x > y) {
+            console.log("x is largest");
+        } else if (x === y) {
+            console.log("x and y are equal");
+        }
+
+        let z = "5";
+
+        /*
+        * What's the difference between == and ===?
+        */
+        console.log("x == z: " + (x == z));
+        console.log("x === z: " + (x === z));
+
+
+        console.log("false == \"\": " + (false == ""));
+        console.log("false == 0: " + (false == 0));
+
+        if (undefined) {
+            console.log("undefined is true");
+        } else {
+            console.log("undefined is false");
+        }
+
+    </script>
+</body>
+
+</html>

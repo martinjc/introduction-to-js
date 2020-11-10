@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Arrays</title>
+</head>
+
+<body>
+    <p>Open the Developer Tools Console to see the output of the JavaScript code</p>
+    <script>
+        let myArray = [2, 4, 6, 8];
+
+        // array length
+        console.log(myArray.length);
+
+        // indexing
+        console.log(myArray[0]);
+        console.log(myArray[1]);
+        console.log(myArray[myArray.length]);
+
+        // adding to end of an array
+        myArray.push(10);
+        console.log(myArray);
+
+        // removing from end of an array
+        myArray.pop();
+        console.log(myArray);
+
+        // looping through an array
+        for (var i = 0; i < myArray.length; i++) {
+            console.log(myArray[i]);
+        }
+
+        let anotherArray = ['martin', 'lisa', 'arthur', 'evelyn'];
+
+        // search for an item
+        console.log(anotherArray.indexOf('lisa'));
+
+
+    </script>
+</body>
+
+</html>
