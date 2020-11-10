@@ -1,7 +1,7 @@
 ---
 layout: page
-order: 5
-title: JavaScript Exercises
+order: 6
+title: Exercise: JavaScript Problem Solving
 ---
 
 Write JavaScript code to solve the following problems (you may recognise these ...):
