@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Variables and Operators</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/introduction-to-js/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/introduction-to-js/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Variables and Operators">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Variables and Operators">
+
+    <link rel="icon" href="/introduction-to-js/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/introduction-to-js/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Variables and Operators
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/introduction-to-js/'>Home</a>
+        <ul><li><a href="/introduction-to-js/notes/variables/">Variables and Operators</a></li><li><a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></li><li><a href="/introduction-to-js/notes/iteration/">Iteration</a></li><li><a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></li></ul>
+        <a href="/introduction-to-js/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=207fb300-a452-4db0-92a7-ac680183632b&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=207fb300-a452-4db0-92a7-ac680183632b" target="blank">link to the full version of the video</a></small></p>
+<h2>Declaring variables</h2>
+<p>There are three different keywords that allow us to declare variables in JavaScript:</p>
+<ul>
+<li><code>var</code></li>
+<li><code>let</code></li>
+<li><code>const</code></li>
+</ul>
+<h3><code>var</code></h3>
+<p><code>var</code> allows us to declare a variable. This variable’s value and type can be changed after assignment. The <strong>scope</strong> of the variable is not restricted to the local block</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span><br><span class="token keyword">var</span> myName <span class="token operator">=</span> <span class="token string">"martin"</span><span class="token punctuation">;</span></code></pre>
+<h3><code>let</code></h3>
+<p><code>let</code> allows us to declare a variable. This variable’s value and type can be changed after assignment. The <strong>scope</strong> of the variable is limited to the block in which it is declared</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token string">"martin"</span><span class="token punctuation">;</span></code></pre>
+<h3><code>const</code></h3>
+<p><code>const</code> allows us to declare a <strong>constant</strong> variable. The value of this variable cannot be changed once assigned (this is sometimes referred to as being <strong>immutable</strong>)</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token constant">PI</span> <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> myName <span class="token operator">=</span> <span class="token string">"Martin"</span><span class="token punctuation">;</span></code></pre>
+<h2>Naming variables</h2>
+<p>Variable names must start with a letter, an underscore (_) or a dollar sign ($). We normally useCamelCase for naming variables in JavaScript (as opposed to Python where snake_case_is_more_common). We cannot use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar">reserved words</a> for variable names.</p>
+<h2>Scope</h2>
+<p>The <strong>scope</strong> of a variable refers to the regions of code in which a variable is valid - the places in the code where the variable exists and can be read from or assigned to. If a variable is out of scope then it cannot be used; if it is in scope then we can refer to it by name and access the value it contains.</p>
+<p>In this example, <code>myName</code> is out of scope when it is used by <code>console.log</code>, as it is declared using <code>let</code> so is only valid inside the block of code where it is declared.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token string">"Martin"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">// will throw a ReferenceError because myName is out of scope</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myName<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>In this example, <code>myName</code> is in scope when it is used by <code>console.log</code>, as it is declared using <code>var</code> so it is valid both inside and outside the block of code where it is declared.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">var</span> myName <span class="token operator">=</span> <span class="token string">"Martin"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">// will throw a ReferenceError because myName is out of scope</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>myName<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>Data types in JavaScript</h2>
+<ul>
+<li>boolean: <code>true</code> and <code>false</code></li>
+<li><code>null</code>; a special value for nothing</li>
+<li><code>undefined</code> for when something exists but has not had a value assigned</li>
+<li>Number - an integer (whole number) or floating point (decimal) number</li>
+<li>String - a sequence of characters</li>
+</ul>
+<h3>Typing</h3>
+<p>JavaScript is dynamically typed and weakly typed. We do not need to tell JS what type a variable will be when we declare it, and we can change the type of data stored in a variable once it has been declared. JavaScript will convert types as it needs to during script execution.</p>
+<h2>Operators</h2>
+<ul>
+<li>Arithmetic operators: <code>+</code>, <code>-</code>, <code>/</code>, <code>*</code>, <code>%</code>, <code>**</code></li>
+<li>Relational operators: <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></li>
+<li>Equality operators: <code>==</code>, <code>!=</code>, <code>===</code>, <code>!==</code></li>
+<li>Logical operators: <code>&amp;&amp;</code>, <code>||</code>, <code>!</code></li>
+<li>Increment/Decrement: <code>++</code>, <code>--</code></li>
+</ul>
+<h2>Equality</h2>
+<p>JavaScript has two ways of comparing equality, <code>==</code> and <code>===</code>.</p>
+<p><code>==</code> and <code>!=</code> only consider value</p>
+<p><code>===</code> and <code>!==</code> consider both value and type</p>
+
+        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-js"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>

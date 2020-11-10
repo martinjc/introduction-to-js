@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Arrays</title>
+</head>
+
+<body>
+    <p>Open the Developer Tools Console to see the output of the JavaScript code</p>
+    <script>
+        let myArray = [2, 4, 6, 8];
+        let anotherArray = ['martin', 'lisa', 'arthur', 'evelyn'];
+
+        // forEach for looping through an array
+        myArray.forEach((item, index) => {
+            console.log(item, index)
+        });
+
+        // reversing an array
+        console.log(myArray.reverse());
+
+        // sorting an array
+        console.log(anotherArray.sort());
+
+        // test if all elements meet some condition
+        // let allEven = myArray.every(function(a) {
+        //     a % 2 === 0;
+        // });
+        let allEven = myArray.every(a => a % 2 === 0);
+        console.log(allEven);
+
+        // run a function on each element and get the results as a new array
+        let uppercase = anotherArray.map(s => s.toUpperCase());
+        console.log(uppercase);
+
+        // reduce an array to a single value
+        let total = myArray.reduce((a, b) => b + a);
+        console.log(total);
+    </script>
+</body>
+
+</html>

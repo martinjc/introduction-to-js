@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Iteration</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/introduction-to-js/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/introduction-to-js/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Iteration">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Iteration">
+
+    <link rel="icon" href="/introduction-to-js/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/introduction-to-js/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Iteration
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/introduction-to-js/'>Home</a>
+        <ul><li><a href="/introduction-to-js/notes/variables/">Variables and Operators</a></li><li><a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></li><li><a href="/introduction-to-js/notes/iteration/">Iteration</a></li><li><a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></li></ul>
+        <a href="/introduction-to-js/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>There are a number of different ways to loop or iterate in JavaScript: <code>for</code>, <code>while</code>, <code>do ... while</code></p>
+<h2>For Loops</h2>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=3aea16ee-b8bc-4ef6-a0a4-ac6801836233&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3aea16ee-b8bc-4ef6-a0a4-ac6801836233" target="blank">link to the full version of the video</a></small></p>
+<p>A for loop has the following general structure:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialisation<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> final <span class="token operator">-</span> expression<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token comment">// ... code to execute on each iteration</span><br><span class="token punctuation">}</span></code></pre>
+<ul>
+<li>The <strong>initialisation</strong> is where we set up the variable used in iteration (a counter for instance)</li>
+<li>The <strong>condition</strong> is the boolean expression we check on each iteration to check whether the loop should continue</li>
+<li>The <strong>final-expression</strong> is code that is always executed last of all on each iteration (usually to increment/decrement the counter)</li>
+</ul>
+<pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h3><code>break</code></h3>
+<p>We can use the <code>break</code> keyword to exit a loop</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">></span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">break</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<h3><code>continue</code></h3>
+<p>We can use the <code>continue</code> keyword to stop the current iteration and skip to the next</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">continue</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></p><p class="previous">Previous: <a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-js"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>
