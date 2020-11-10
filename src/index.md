@@ -9,6 +9,12 @@ We look at the syntax and fundamental structures of the language and how we writ
 
 {% panopto "48d76b87-cccf-4a84-bf4e-ac68018362c4" %}
 
+## Writing JavaScript
+
+We write JavaScript code as plain text, as a set of **statements**. Each **statement** is ended by a semi-colon `;`. JavaScript code is case sensitive. It includes blocks of code, denoted using curly braces `{ ... }`.
+
+JavaScript is interpreted and executed by a JavaScript engine. We can find a JavaScript engine inside every web browser, and can also find them in tools that run on the desktop, like **node**.
+
 ## Further reading
 
 The Mozilla Developer Network (MDN) has some good introductory articles on HTML and CSS. MDN is a very good resource for web developers, it covers a lot of web technologies in depth and is fairly reliable, though given recent changes in Mozilla, it is currently under threat. For now though, it still exists, and so MDN should be one of the first places you look for documentation/tutorials on web technologies.
@@ -21,7 +27,7 @@ In addition to the MDN tutorials and reference, Eloquent JavaScript is a really 
 
 ## Code examples
 
-There are a set of code examples that accompany this course showing the use of the fundamental JavaScript syntax. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
+There are a set of code examples that accompany this course showing the use of JavaScript. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
 -   Variable Types [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/2-1/basic-js/types.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/types.html)
 -   Numerical Operators [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/2-1/basic-js/numbers.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/numbers.html)
