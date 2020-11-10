@@ -3,7 +3,7 @@ layout: page
 title: Introduction to JavaScript
 ---
 
-These notes introduce the JavaScript programming language. We focus on JavaScript as a general programming language itself, rather than looking at the use of JavaScript within webpages and using Web APIs to add dynamic and interactive content to webpages; this is covered in another course.
+These notes introduce the JavaScript programming language. We focus on JavaScript as a general programming language itself, rather than looking at the use of JavaScript within webpages and using Web APIs to add dynamic and interactive content to webpages; this is covered in another set of notes.
 
 We look at the syntax and fundamental structures of the language and how we write JavaScript code to solve well understood problems.
 
