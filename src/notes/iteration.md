@@ -10,7 +10,7 @@ There are a number of different ways to loop or iterate in JavaScript: `for`, `w
 
 {% panopto "3aea16ee-b8bc-4ef6-a0a4-ac6801836233" %}
 
-A for loop has the following general structure:
+A `for` loop has the following general structure:
 
 ```js
 for (initialisation; condition; final - expression) {
@@ -27,6 +27,20 @@ for (let i = 0; i < 10; i++) {
     console.log(i);
 }
 ```
+
+## While loops
+
+{% panopto "d5fb2e60-8ba3-49ec-bd7b-ac7200cf8592" %}
+
+A `while` loop has the following general structure:
+
+```js
+while(boolean condition) {
+    //  ... code to execute on each iteration
+}
+```
+
+The block of code within the loop will be run while the boolean condition evaluates to `true`. It is very easy to cause an **infinite loop** with a while loop as you can easily forget to ensure that the boolean condition will change at some point.
 
 ### `break`
 
