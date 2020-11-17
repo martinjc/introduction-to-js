@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 6
-title: "Exercise: JavaScript Problem Solving"
+title: "Week 3 Exercise: JavaScript Problem Solving"
 ---
 
 Write JavaScript code to solve the following problems (you may recognise these ...):
