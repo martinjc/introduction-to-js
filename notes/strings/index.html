@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Strings</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/introduction-to-js/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/introduction-to-js/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Strings">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Strings">
+
+    <link rel="icon" href="/introduction-to-js/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/introduction-to-js/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Strings
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/introduction-to-js/'>Home</a>
+        <ul><li><a href="/introduction-to-js/notes/variables/">Variables and Operators</a></li><li><a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></li><li><a href="/introduction-to-js/notes/iteration/">Iteration</a></li><li><a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></li><li><a href="/introduction-to-js/notes/using-functions/">Using functions</a></li><li><a href="/introduction-to-js/notes/exercises/">Week 3 Exercise: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/strings/">Strings</a></li><li><a href="/introduction-to-js/notes/writing-functions/">Writing functions</a></li></ul>
+        <a href="/introduction-to-js/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>Strings in JavaScript are sequences of text characters, contained within <code>'</code>, <code>&quot;</code> or <code>`</code> characters.</p>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ee5e116c-4408-4c11-9a84-ac7200cf85cf&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ee5e116c-4408-4c11-9a84-ac7200cf85cf" target="blank">link to the full version of the video</a></small></p>
+<p>We can use any of the three quotes (single, double or backtick) to define Strings, but we must <strong>start</strong> and <strong>end</strong> using the same character</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token string">"Martin"</span><span class="token punctuation">;</span><br><br><span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token string">"Martin"</span><span class="token punctuation">;</span><br><br><span class="token keyword">let</span> myName <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Martin</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code></pre>
+<h2>Special characters</h2>
+<p>We can include special characters in JavaScript Strings by escaping them using the <code>\</code> character. <code>\n</code> adds a new line. <code>\t</code> adds a tab. <code>\\</code> adds a <code>\</code>.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> myText <span class="token operator">=</span> ‘This is one line\nThis is another’<span class="token punctuation">;</span><br><br><span class="token keyword">let</span> myText <span class="token operator">=</span> “\tThis is indented”<span class="token punctuation">;</span><br><br><span class="token keyword">let</span> myText <span class="token operator">=</span> “We can escape \” too”<span class="token punctuation">;</span><br></code></pre>
+<h2>String concatentation</h2>
+<p>We can use the <code>+</code> operator to join Strings together</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> myText <span class="token operator">=</span> <span class="token string">"Hello"</span> <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span> <span class="token string">"World!"</span><span class="token punctuation">;</span></code></pre>
+<h2>Template literals</h2>
+<p>Strings defined using <code>`</code> characters (backticks) are template literals. These are special as we can embed expressions within them.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> numChildren <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> tirednessAmount <span class="token operator">=</span> <span class="token string">"very"</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> myText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Martin has </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>numChildren<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> children, which explains why Martin is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>tirednessAmount<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> tired</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code></pre>
+<p>These expressions can be simple usage of variables, as above, or we can even carry out operations within our <code>${ ... }</code> literals:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> bigOneAge <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> thisYear <span class="token operator">=</span> <span class="token number">2020</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> myText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Martin's eldest child is </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>bigOneAge<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> so Martin has been tired since </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>thisYear <span class="token operator">-</span> bigOneAge<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span></code></pre>
+<h2>String Objects</h2>
+<p>Strings are actually a type of <strong>Object</strong>. Objects are more complicated data types in JavaScript that we aren’t going to worry about yet. All we need to know about them is that they have <strong>properties</strong> that tell us more about them, and <strong>methods</strong> which are functions that work on the Object itself…</p>
+<p>Strings have a <strong>length</strong> property that tells us how long the String is:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> myText <span class="token operator">=</span> <span class="token string">"When, in disgrace with fortune and men’s eyes,\nI all alone beweep my outcast state,"</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">myText length: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>myText<span class="token punctuation">.</span>length<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Strings have <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">a lot of different methods</a> that we can use to alter, search, replace or do other things with:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> m <span class="token operator">=</span> ‘The quick brown fox …’<br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>“fox”<span class="token punctuation">,</span> “cat”<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2>String demo</h2>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=2fe5a51a-ede3-4e75-8e00-ac7200cfc709&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2fe5a51a-ede3-4e75-8e00-ac7200cfc709" target="blank">link to the full version of the video</a></small></p>
+
+        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/writing-functions/">Writing functions</a></p><p class="previous">Previous: <a href="/introduction-to-js/notes/exercises/">Week 3 Exercise: JavaScript Problem Solving</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-js"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>
