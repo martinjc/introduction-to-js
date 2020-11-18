@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Using functions</title>
+    <title>Week 4 Exercise: JavaScript Problem Solving</title>
 
     <meta name="description" content="">
 
@@ -18,7 +18,7 @@
 
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Using functions">
+    <meta property="og:title" content="Week 4 Exercise: JavaScript Problem Solving">
     <meta property="og:site_name" content="Introduction to Programming">
     <meta property="og:locale" content="en_GB">
     <meta property="article:author" content="Martin Chorley">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@martinjc">
     <meta name="twitter:url" content="">
-    <meta name="twitter:title" content="Using functions">
+    <meta name="twitter:title" content="Week 4 Exercise: JavaScript Problem Solving">
 
     <link rel="icon" href="/introduction-to-js/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
 </header>
     <header>
     <h1> <a href="">
-            Using functions
+            Week 4 Exercise: JavaScript Problem Solving
         </a></h1>
 </header>
 
@@ -52,16 +52,25 @@
     </nav>
 
     <div class="content">
-        <p>Functions are collections of <strong>statements</strong> that are grouped together and (optionally) have a name that we can use to <strong>call</strong> that function.</p>
-<p>We’ve already used a few different functions. For instance <code>console.log</code> is a function. We <strong>call</strong> a function, which asks JavaScript to execute the statements within the function</p>
-<p>Functions can accept input <strong>arguments</strong>, though not all functions require them.</p>
-<p>If we use a function name without the <code>( ... )</code> we are referring to the function itself, if we add the <code>( ... )</code> then the function will be executed (or <strong>called</strong>).</p>
-<h2>Math</h2>
-<p>JavaScript has a <code>Math</code> object that contains a number of functions useful for doing … well, maths. You can see the full list of these functions in the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"><code>Math</code> documentation</a>.</p>
-<p>For example, calling <code>Math.floor(x)</code> and passing in a floating point number <code>x</code> will return the largest integer less than or equal to <code>x</code>.</p>
-<pre class="language-js"><code class="language-js"><span class="token comment">// will return 3</span><br>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">3.2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// will return 6</span><br>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">6.9</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// will return NaN</span><br>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// is a function</span><br>Math<span class="token punctuation">.</span>floor<span class="token punctuation">;</span></code></pre>
+        <h2>Reading files</h2>
+<p>To solve some of these exercises you will need to read a file. When JavaScript runs in the web browser this is usually not possible - JavaScript is <strong>sandboxed</strong> away from the file system of the machine on which the web browser is running. However, when we run JavaScript on the command line using node we can access the file system using the <code>fs</code> module. We need to <code>require</code> this module, which tells node to load the library and make it available to our code.</p>
+<p>So, for example, to read the contents of a text file <code>hello.txt</code> into a variable <code>data</code></p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"fs"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> data <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">"hello.txt"</span><span class="token punctuation">,</span> <span class="token string">"utf8"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>We’ll talk more about file access in node (and some better ways to do it) later in the course. For now though, this will do.</p>
+<h2>Exercises</h2>
+<ol>
+<li>
+<p>Write JavaScript code that finds all the words in <a href="/examples/words.txt">words.txt</a> with three consecutive double letters.</p>
+</li>
+<li>
+<p>Write JavaScript code that finds the longest common prefix string amongst a given array of strings. Return false If there is no common prefix. For Example, the longest common prefix of “abcdefgh” and “abcefgh” is “abc”.</p>
+</li>
+<li>
+<p>Write JavaScript code to check whether a given number is Oddish or Evenish. A number is called “Oddish” if the sum of all of its digits is odd, and a number is called “Evenish” if the sum of all of its digits is even.</p>
+</li>
+</ol>
 
-        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/week3-exercises/">Week 3 Exercise: JavaScript Problem Solving</a></p><p class="previous">Previous: <a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></p>
+        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/arrays/">Arrays</a></p><p class="previous">Previous: <a href="/introduction-to-js/notes/writing-functions/">Writing functions</a></p>
         </div>
         <div class="comments">
             <script src="https://utteranc.es/client.js"
