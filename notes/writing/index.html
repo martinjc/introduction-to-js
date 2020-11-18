@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/introduction-to-js/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/introduction-to-js/lib/termynal/termynal.css">
 </head>
   <body>
     <header>
@@ -54,9 +55,18 @@
         <p>Here’s a demo of writing and running some JavaScript code. The <a href="/introduction-to-js/examples/js-examples.zip">example code from the video is attached here</a>.</p>
 <iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=63c29b07-0151-444e-bdeb-ac690157a145&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 <p><small>If the embed above does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=63c29b07-0151-444e-bdeb-ac690157a145" target="blank">link to the full version of the video</a></small></p>
-<ul>
-<li></li>
-</ul>
+<p>We can use <code>node</code> to run files containing JavaScript code on the command line.</p>
+<p>So, for example, a basic <code>helloworld.js</code> containing:</p>
+<pre class="language-js"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>can be run like so:</p>
+<div id="termynal" data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
+    <span data-ty="input">ls</span>
+    <span data-ty>helloworld.js</span>
+    <span data-ty="input">node helloworld.js</span>
+    <span data-ty>hello world!</span>
+</div>
+<script>
+</script>
 
         <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/using-functions/">Using functions</a></p><p class="previous">Previous: <a href="/introduction-to-js/notes/iteration/">Iteration</a></p>
         </div>
@@ -81,6 +91,6 @@ document.querySelectorAll('.answer-block').forEach(d => {
     });
 });
 </script>
-    
+    <script src="/introduction-to-js/lib/termynal/termynal.js" data-termynal-container="#termynal"></script>
   </body>
 </html>
