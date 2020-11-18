@@ -1,6 +1,6 @@
 ---
 layout: page
-order: 6
+order: 7
 title: Strings
 ---
 

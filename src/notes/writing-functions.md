@@ -1,6 +1,6 @@
 ---
 layout: page
-order: 7
+order: 8
 title: Writing functions
 ---
 
