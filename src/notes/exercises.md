@@ -4,7 +4,7 @@ order: 6
 title: "Week 3 Exercise: JavaScript Problem Solving"
 ---
 
-Write JavaScript code to solve the following problems (you may recognise these ...):
+Write JavaScript code to solve the following problems (you may recognise these ...). Where a code asks for numerical input from a user you can just 'hard-code' this input into your answer:
 
 1. Write some code to print out all the numbers from 1 to 10
 
