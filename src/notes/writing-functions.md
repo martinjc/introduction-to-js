@@ -84,12 +84,12 @@ You can call a function with fewer input parameters than it usually expects, and
 
 There are a set of code examples that accompany this course showing the use of JavaScript. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
--   Variable Types [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/types.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/types.html)
--   Numerical Operators [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/numbers.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/numbers.html)
--   Booleans [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/booleans.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/booleans.html)
--   Looping [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/looping.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/looping.html)
+-   Variable Types [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/types.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/types.html)
+-   Numerical Operators [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/numbers.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/numbers.html)
+-   Booleans [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/booleans.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/booleans.html)
+-   Looping [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/looping.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/looping.html)
 -   Functions
-    -   Function 1 [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/functions1.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/functions1.html)
-    -   Function 2 [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/functions2.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/functions2.html)
-    -   Function 3 [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/functions3.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/functions3.html)
-    -   Arrow Functions [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/arrow-functions.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/arrow-functions.html)
+    -   Function 1 [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/functions1.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/functions1.html)
+    -   Function 2 [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/functions2.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/functions2.html)
+    -   Function 3 [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/functions3.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/functions3.html)
+    -   Arrow Functions [[HTML]](https://github.com/martinjc/introduction-to-js/blob/main/src/examples/basic-js/arrow-functions.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/arrow-functions.html)
