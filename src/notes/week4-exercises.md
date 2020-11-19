@@ -21,7 +21,7 @@ We'll talk more about file access in node (and some better ways to do it) later 
 
 ## Exercises
 
-1. Write JavaScript code that finds all the words in [words.txt](/examples/words.txt) with three consecutive double letters.
+1. Write JavaScript code that finds all the words in [words.txt]({{ "/examples/words.txt" | url }}) with three consecutive double letters.
 
 2. Write JavaScript code that finds the longest common prefix string amongst a given array of strings. Return false If there is no common prefix. For Example, the longest common prefix of "abcdefgh" and "abcefgh" is "abc".
 

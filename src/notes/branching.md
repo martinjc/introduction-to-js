@@ -39,6 +39,6 @@ Almost everything is `true` in JavaScript, except for:
 
 There are a set of code examples that accompany this course showing the use of JavaScript. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
 
--   Variable Types [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/types.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/types.html)
--   Numerical Operators [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/numbers.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/numbers.html)
--   Booleans [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/master/basic-js/booleans.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/booleans.html)
+-   Variable Types [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/main/src/examples/basic-js/types.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/types.html)
+-   Numerical Operators [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/main/src/examples/basic-js/numbers.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/numbers.html)
+-   Booleans [[HTML]](https://github.com/martinjc/introduction-to-js/examples/blob/main/src/examples/basic-js/booleans.html) [[Demo]](https://martinjc.github.io/introduction-to-js/examples/basic-js/booleans.html)
