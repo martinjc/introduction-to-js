@@ -80,6 +80,10 @@ You can call a function with fewer input parameters than it usually expects, and
 
 {% panopto "8a689d66-a83c-430c-a42a-ac7200d011dd" %}
 
+## Further Reading
+
+-   [Eloquent JavaScript - Functions](https://eloquentjavascript.net/03_functions.html)
+
 ## Code examples
 
 There are a set of code examples that accompany this course showing the use of JavaScript. (Right click and open in a new window/tab) if you're viewing this on Learning Central.
