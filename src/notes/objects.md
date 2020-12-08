@@ -4,14 +4,13 @@ order: 12
 title: "Objects"
 ---
 
-{% panopto ff31edbf-1fc6-44a5-8cd9-ac8a01597874 %}
+{% panopto "ff31edbf-1fc6-44a5-8cd9-ac8a01597874" %}
 
-{% panopto fd7a6205-5b5d-4a22-87d6-ac8a0159704b %}
+{% panopto "fd7a6205-5b5d-4a22-87d6-ac8a0159704b" %}
 
 ## Related reading
 
 -   [Eloquent JavaScript - Data Structures](https://eloquentjavascript.net/04_data.html)
-
 
 ## Code examples
 
