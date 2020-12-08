@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Objects</title>
+</head>
+
+<body>
+    <p>Open the Developer Tools Console to see the output of the JavaScript code.</p>
+    <p>This example creates a simple Object in JavaScript. If you've seen Python, this looks a lot like defining a
+        dictionary in that language. If you examine the Object in the console, you can see that it has the functions
+        inherited from the Object prototype.</p>
+    <script>
+
+        var cmt112 = {
+            code: "cmt112",
+            name: "Web Apps",
+            lecturer: "Martin",
+            students: []
+        }
+
+        cmt112.students.push("Brian");
+        cmt112.students.push("Sarah");
+        console.log(cmt112);
+    </script>
+</body>
+
+</html>

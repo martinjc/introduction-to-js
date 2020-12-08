@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Objects</title>
+</head>
+
+<body>
+    <p>Open the Developer Tools Console to see the output of the JavaScript code</p>
+    <p>This example creates an Object in JavaScript using a function to define a Constructor. If you examine the Object in the console, you can see that it has the functions inherited from the Object prototype. We can also add functions to the Object inside the constructor.</p>
+    <script>
+
+        function Module(code, name, lecturer) {
+            this.code = code;
+            this.name = name;
+            this.lecturer = lecturer;
+            this.students = [];
+
+            this.addStudent = function (studentName) {
+                this.students.push(studentName);
+            };
+        }
+
+        var cmt112 = new Module("cmt112", "Web Apps", "Martin");
+        cmt112.addStudent("Brian");
+        cmt112.addStudent("Sarah");
+        console.log(cmt112);
+    </script>
+</body>
+
+</html>
