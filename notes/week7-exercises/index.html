@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Week 7 Exercise: JavaScript and Tests</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/introduction-to-js/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/introduction-to-js/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Week 7 Exercise: JavaScript and Tests">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Week 7 Exercise: JavaScript and Tests">
+
+    <link rel="icon" href="/introduction-to-js/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/introduction-to-js/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/introduction-to-js/lib/termynal/termynal.css">
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Week 7 Exercise: JavaScript and Tests
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/introduction-to-js/'>Home</a>
+        <ul><li><a href="/introduction-to-js/notes/variables/">Variables and Operators</a></li><li><a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></li><li><a href="/introduction-to-js/notes/iteration/">Iteration</a></li><li><a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></li><li><a href="/introduction-to-js/notes/using-functions/">Using functions</a></li><li><a href="/introduction-to-js/notes/week3-exercises/">Week 3 Exercise: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/strings/">Strings</a></li><li><a href="/introduction-to-js/notes/writing-functions/">Writing functions</a></li><li><a href="/introduction-to-js/notes/week4-exercises/">Week 4 Exercise: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/arrays/">Arrays</a></li><li><a href="/introduction-to-js/notes/week5-exercises/">Week 5 Exercise: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/objects/">Objects</a></li><li><a href="/introduction-to-js/notes/week7-exercises/">Week 7 Exercise: JavaScript and Tests</a></li></ul>
+        <a href="/introduction-to-js/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>We are now going to practice using JavaScript to solve simple problems, to check we understand some of the fundamentals of the language before we start getting into more complicated code. We are also going to get some experience of using testing frameworks to check our code is correct.</p>
+<p>We have a set of code templates to work from this week. Download <a href="https://martinjc.github.io/introduction-to-js/examples/week7-javascript-programming.zip">the starting source code for this week</a> and extract it.</p>
+<p>There are a lot of files in this folder.</p>
+<ul>
+<li>There are a number of <code>.js</code> files. Each one contains a single JavaScript function that we need to complete.</li>
+<li>There is a folder called <code>test</code>. This contains test cases that check that the JavaScript functions we are going to write are working correctly.</li>
+<li>There is a <code>.gitignore</code> file. This tells Git to ignore certain files and folders and not to include them in the repository.</li>
+<li>There is a <code>package.json</code> and a <code>package-lock.json</code>. These are used for managing the installation of JavaScript modules when we are using JavaScript on the command line. We’ll look at these in more detail in a couple of weeks time.</li>
+</ul>
+<p>Open a command line, and navigate to the directory with all the files you just downloaded. The first thing we need to do is install some requirements for todays lab. We can do this using the command <code>npm install</code>. This will download a few JavaScript packages into a folder called <code>node_modules</code>. You don’t need to worry about this too much at the moment, again, we’ll look at this more in a couple of weeks time.</p>
+<p>As mentioned - the code we have downloaded comes with a set of test cases that check whether the code is working. We can run these tests with the command <code>npm test</code>. If you run this command, you should see the output from all the tests included in the test directory. There will be a lot of errors, because at this point all but one of our tests are failing.</p>
+<p>It’s difficult to see what’s going on when we run all the tests at the same time, so let’s run an individual test instead:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token builtin class-name">test</span> test/test_hello.js</code></pre>
+<p>You should get some output something like the below:</p>
+<p><img src="/introduction-to-js/img/test-hello-fail.png" alt="Failing Test"></p>
+<p>This command has run the test case in the file <code>test_hello.js</code>, which checks the function in <code>hello.js</code> to make sure it works correctly. The test is failing, so clearly there is something wrong with our function. Open up the file <code>hello.js</code></p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token comment">// should return "hello name"</span><br>    <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> hello<span class="token punctuation">;</span></code></pre>
+<p>We can see that the function <code>hello</code> just returns -1, when it should use the name it is given and return a String. Let’s fix the function:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token comment">// should return "hello name"</span><br>    <span class="token keyword">return</span> <span class="token string">"hello "</span> <span class="token operator">+</span> name<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> hello<span class="token punctuation">;</span></code></pre>
+<p>If we save the file, and then run the test again:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token builtin class-name">test</span> test/test_hello.js</code></pre>
+<p>We should see that we have fixed the code and the test case now passes:</p>
+<p><img src="/introduction-to-js/img/test-hello-pass.png" alt="Passing Test"></p>
+<p>Your task for this week is to go through the JavaScript functions fixing them so that they all pass their test cases. At the end of the session you should be able to run <code>npm test</code> and get no error messages about failing tests.</p>
+<h3>The problems</h3>
+<p>1.) Hello</p>
+<ul>
+<li>file: <code>hello.js</code></li>
+<li>test: <code>test/test_hello.js</code></li>
+</ul>
+<p>This function accepts a String as input and should return that String with <code>hello</code> prepended to it.</p>
+<p>2.) Sumall</p>
+<ul>
+<li>file: <code>sumall.js</code></li>
+<li>test: <code>test/test_sumall.js</code></li>
+</ul>
+<p>This function accepts a number as input. It then returns the sum of all numbers <em>lower than or equal to</em> this value. For example, if given the input <code>5</code>, it should return <code>15</code> - (<code>5 + 4 + 3 + 2 + 1</code>)</p>
+<p>3.) Sumall35</p>
+<ul>
+<li>file: <code>sumall35.js</code></li>
+<li>test: <code>test/test_sumall35.js</code></li>
+</ul>
+<p>This function accepts a number as input. It then returns the sum of all numbers <em>lower than</em> this value that are exactly divisible by 3 or 5. For example, if given the input <code>7</code>, it should return <code>14</code> - (<code>6 + 5 + 3</code>)</p>
+<p>4.) Largest</p>
+<ul>
+<li>file: <code>largest.js</code></li>
+<li>test: <code>test/test_largest.js</code></li>
+</ul>
+<p>This accepts an Array as input and should return the largest value in the Array. For example, if given the input <code>[4, 3, 2]</code> it should return <code>4</code></p>
+<p>5.) HighestLowest</p>
+<ul>
+<li>file: <code>highestlowest.js</code></li>
+<li>test: <code>test/test_highestlowest.js</code></li>
+</ul>
+<p>This function accepts a String as input. This String will be a set of space separated numbers. The function should return the highest and lowest numbers in the String, as another space separated String, with the highest number first. For example, given the input <code>&quot;4 6 8&quot;</code> it should return <code>&quot;8 4&quot;</code></p>
+<p>6.) Even Or Odd</p>
+<ul>
+<li>file: <code>evenorodd.js</code></li>
+<li>test: <code>test/test_even_or_odd.js</code></li>
+</ul>
+<p>This function takes a number as input and returns “even” if the number is even (exactly divisible by 2) or “odd” if the number is odd.</p>
+<p>7.) MakeNegative</p>
+<ul>
+<li>file: <code>makenegative.js</code></li>
+<li>test: <code>test/test_makenegative.js</code></li>
+</ul>
+<p>This function takes a number as input. If the number is positive, it returns a negative number with the same magnitude. If the number is negative, it returns the number. So, for example, given the input <code>5</code> it should return <code>-5</code></p>
+<p>8.) Middle</p>
+<ul>
+<li>file: <code>middle.js</code></li>
+<li>test: <code>test/test_middle.js</code></li>
+</ul>
+<p>This function takes a String as input. If the length of the String is odd, it returns the middle character of the String. If the length of the String is even, it returns the middle two characters.</p>
+<p>9.) Mumbling</p>
+<ul>
+<li>file: <code>mumbling.js</code></li>
+<li>test: <code>test/test_mumbling.js</code></li>
+</ul>
+<p>This function accepts a String as input and returns a new String made up of the characters of the original string repeated <code>n</code> times, where <code>n</code> is their position in the original String. The set of repeated characters should be in TitleCase. For example, given the input <code>her</code> it should return <code>H-Ee-Rrr</code></p>
+<p>10.) Palindrome</p>
+<ul>
+<li>file: <code>palindrome.js</code></li>
+<li>test: <code>test/test_palindrome.js</code></li>
+</ul>
+<p>This function returns <code>true</code> if the supplied input String is a palindrome, <code>false</code> if not. A palindrome is a word that is spelt the same backwards and forwards.</p>
+<p>11.) Repeat String</p>
+<ul>
+<li>file: <code>repeatstring.js</code></li>
+<li>test: <code>test/test_repeatstring.js</code></li>
+</ul>
+<p>This function accepts a String <code>s</code> as input and a number <code>n</code> and returns the String <code>s</code> repeated <code>n</code> times. For example, if given the input <code>hi</code> and 6, it would return <code>hihihihihihi</code></p>
+<p>12.) Smush</p>
+<ul>
+<li>file: <code>smush.js</code></li>
+<li>test: <code>test/test_smush.js</code></li>
+</ul>
+<p>This function accepts two Arrays as inputs, and returns a new array formed by stitching the two Arrays together an element at a time. For example, given the input <code>[5, d]</code> and <code>[f, 6]</code> it should return <code>[5, f, d, 6]</code></p>
+<p>13.) Population</p>
+<ul>
+<li>file: <code>population.js</code></li>
+<li>test: <code>test/test_population.js</code></li>
+</ul>
+<p>This function models population growth to see how long it will take a town of a certain size to reach a target population. It has a number of parameters:</p>
+<ul>
+<li>the starting population</li>
+<li>the natural percentage increase each year</li>
+<li>the number of people who move to the town each year</li>
+<li>the target population</li>
+</ul>
+<p>The function will use the first three parameters to calculate and return the number of years before the population hits the supplied target.</p>
+
+        <div class="nextprev"><p class="previous">Previous: <a href="/introduction-to-js/notes/objects/">Objects</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-js"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    <script src="/introduction-to-js/lib/termynal/termynal.js" data-termynal-container="#termynal"></script>
+  </body>
+</html>
