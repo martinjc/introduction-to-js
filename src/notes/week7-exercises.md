@@ -61,7 +61,7 @@ We should see that we have fixed the code and the test case now passes:
 
 ![Passing Test]({{ "/img/test-hello-pass.png" | url }})
 
-Your task for this week is to go through the JavaScript functions fixing them so that they all pass their test cases. At the end of the session you should be able to run `npm test` and get no error messages about failing tests.
+Your task for this week is to go through the JavaScript functions fixing them so that they all pass their test cases. At the end of the session you should be able to run `npm test` and get no error messages about failing tests. Each time you complete an exercise, submit your working code to the [form here](https://forms.office.com/Pages/ResponsePage.aspx?id=MEu3vWiVVki9vwZ1l3j8vBOfLE1pikVOra_03FfJWJhUM09UQzRERDRCRTVFQlFOODRZTlY5ODhWQS4u)
 
 ### The problems
 
