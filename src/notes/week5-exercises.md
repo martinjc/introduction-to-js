@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 11
-title: "Week 5 Exercise: JavaScript Problem Solving"
+title: "Exercise: JavaScript Problem Solving"
 ---
 
 ## Exercise 1

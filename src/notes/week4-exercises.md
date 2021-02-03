@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 9
-title: "Week 4 Exercise: JavaScript Problem Solving"
+title: "Exercise: JavaScript Problem Solving"
 ---
 
 ## Reading files
