@@ -11,7 +11,15 @@ We look at the syntax and fundamental structures of the language and how we writ
 
 ## Writing JavaScript
 
-We write JavaScript code as plain text, as a set of **statements**. Each **statement** is ended by a semi-colon `;`. JavaScript code is case sensitive. It includes blocks of code, denoted using curly braces `{ ... }`. JavaScript does not care about whitespace. You can write JavaScript entirely without whitespace, though there are some standard conventions about where we put spaces and new lines, and we'll see examples of that as we learn the language.
+We write JavaScript code as plain text, as a set of **statements**. 
+
+Each **statement** is ended by a semi-colon `;`. 
+
+JavaScript code is case sensitive. 
+
+It includes blocks of code, denoted using curly braces `{ ... }`. 
+
+JavaScript does not care about whitespace. You can write JavaScript entirely without whitespace, though there are some standard conventions about where we put spaces and new lines, and we'll see examples of that as we learn the language.
 
 JavaScript is interpreted and executed by a JavaScript engine. We can find a JavaScript engine inside every web browser, and can also find them in tools that run on the desktop, like **node**.
 

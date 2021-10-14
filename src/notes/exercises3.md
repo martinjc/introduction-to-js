@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 11
-title: "Exercise: JavaScript Problem Solving"
+title: "Exercise 3: JavaScript Problem Solving"
 ---
 
 ## Exercise 1

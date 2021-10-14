@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 9
-title: "Exercise: JavaScript Problem Solving"
+title: "Exercise 2: JavaScript Problem Solving"
 ---
 
 ## Reading files

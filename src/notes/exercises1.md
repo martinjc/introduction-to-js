@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 6
-title: "Exercise: JavaScript Problem Solving"
+title: "Exercise 1: JavaScript Problem Solving"
 ---
 
 Write JavaScript code to solve the following problems (you may recognise these ...). Where a code asks for numerical input from a user you can just 'hard-code' this input into your answer:
