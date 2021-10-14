@@ -1,7 +1,7 @@
 ---
 layout: page
 order: 13
-title: "Exercise: JavaScript and Tests"
+title: "Exercise 4: JavaScript and Tests"
 ---
 
 We are now going to practice using JavaScript to solve simple problems, to check we understand some of the fundamentals of the language before we start getting into more complicated code. We are also going to get some experience of using testing frameworks to check our code is correct.
