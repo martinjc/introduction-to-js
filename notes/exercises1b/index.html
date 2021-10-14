@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Exercise 1B: JavaScript Problem Solving</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/introduction-to-js/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/introduction-to-js/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/introduction-to-js/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Exercise 1B: JavaScript Problem Solving">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Exercise 1B: JavaScript Problem Solving">
+
+    <link rel="icon" href="/introduction-to-js/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/introduction-to-js/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/introduction-to-js/lib/termynal/termynal.css">
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Exercise 1B: JavaScript Problem Solving
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/introduction-to-js/'>Home</a>
+        <ul><li><a href="/introduction-to-js/notes/variables/">Variables and Operators</a></li><li><a href="/introduction-to-js/notes/branching/">Branching and Boolean Expressions</a></li><li><a href="/introduction-to-js/notes/iteration/">Iteration</a></li><li><a href="/introduction-to-js/notes/writing/">Writing JavaScript</a></li><li><a href="/introduction-to-js/notes/using-functions/">Using functions</a></li><li><a href="/introduction-to-js/notes/exercises1a/">Exercise 1: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/exercises1b/">Exercise 1B: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/strings/">Strings</a></li><li><a href="/introduction-to-js/notes/writing-functions/">Writing functions</a></li><li><a href="/introduction-to-js/notes/exercises2/">Exercise 2: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/arrays/">Arrays</a></li><li><a href="/introduction-to-js/notes/exercises3/">Exercise 3: JavaScript Problem Solving</a></li><li><a href="/introduction-to-js/notes/objects/">Objects</a></li><li><a href="/introduction-to-js/notes/exercises4/">Exercise 4: JavaScript and Tests</a></li></ul>
+        <a href="/introduction-to-js/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>Write JavaScript code to solve the following problems (you may recognise these …). Where a code asks for numerical input from a user you can just ‘hard-code’ this input into your answer:</p>
+<ol>
+<li>
+<p>Print the result and the type of the following:</p>
+<ul>
+<li>5</li>
+<li>5 * 2</li>
+<li>5 / 2</li>
+<li>5 % 2</li>
+<li>5**2</li>
+<li>5.0</li>
+<li>5.0 * 2</li>
+<li>5.0 / 2</li>
+<li>5.0 % 2</li>
+<li>5.0**2</li>
+<li>‘good’</li>
+<li>‘good’ + ‘morning’</li>
+<li>‘good’*3</li>
+<li>‘3’ + ‘2’</li>
+<li>‘3’ * 2</li>
+<li>‘3’ + 2</li>
+<li>‘3’ * ‘2’</li>
+</ul>
+</li>
+<li>
+<p>Follow these instructions:</p>
+<ul>
+<li>Store the values 3 and 5 into variables a and b, respectively.</li>
+<li>Multiply a and b and store the result into c.</li>
+<li>Divide b by a and store the results into d</li>
+<li>Print a, b, c, and d.</li>
+<li>Update the values of a, b, c, and d as follows:
+<ul>
+<li>Divide c by b.</li>
+<li>Multiply d by a.</li>
+<li>Increment a by 1.</li>
+<li>Subtract 1 from b.</li>
+</ul>
+</li>
+<li>Store the sum of a, b, c, and d into res.</li>
+<li>Print res</li>
+</ul>
+</li>
+<li>
+<p>Define three integer values, a, b, and c. Then, verify the following logical conditions and print their result:</p>
+<ul>
+<li>a is greater than b.</li>
+<li>b is greater than or equal to a and lower than or equal to c.</li>
+<li>c is lower than a or greater than b.</li>
+<li>a is not equal to b or equal to c.</li>
+<li>The sum of a, b, and c is not greater than 5.</li>
+</ul>
+</li>
+<li>
+<p>Definte three integer values, a, b, and c. Then, translate the following statements into code and test them on the user’s inputs:</p>
+<ul>
+<li>If the sum of a, b, and c is less then 10, then add 5 to a and print “The value of A has been updated to [value]” (example: “The value of A has been updated to 6”); otherwise, print “Test 1 passed”.</li>
+<li>If a is greater than c, then check if a is greater than b. If that’s the case, print “A is the greatest”; otherwise print “A is not the greatest”. If a is not greater than c, then print “C might be greater than A and B”.</li>
+<li>Define a fourth number, d. If d is equal to a or b or c, print “You already introduced this number”. Otherwise, print “Thanks for your contribution”.</li>
+<li>Define a word, w. If w is “sum”, print “The sum of A, B, and C is [sum]”. If w is “hello”, then print “Hi! Nice to meet you!”. If w is greater than or equal to “a” and lower than or equal to “z”, print “This is just a letter…”. Finally, if the user writes something else, print “Sorry, I don’t understand.”.</li>
+</ul>
+</li>
+<li>
+<p>Using for loops:</p>
+<ul>
+<li>Print the numbers from 0 to 9.</li>
+<li>Print the numbers from 1 to 9.</li>
+<li>Print the numbers from 1 to 10.</li>
+<li>Print the even numbers from 2 to 20 (inclusive).</li>
+<li>Print the sum of all the even numbers from 1 to 21.</li>
+<li>Given numbers = [1, 2, 3, 4, 5], print the squared value of each item in numbers.</li>
+<li>Given numbers = [1, 4, 7, 8, 15, 20, 35, 45, 55], sequentially print the items in numbers. Stop when you reach 15. Note: you need to use if and break.</li>
+</ul>
+</li>
+<li>
+<p>Write some JavaScript to print the following string in a specific format.</p>
+</li>
+</ol>
+<p>Sample String : “Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are”</p>
+<p>Output :</p>
+<pre><code>Twinkle, twinkle, little star,
+    How I wonder what you are! 
+        Up above the world so high,           
+        Like a diamond in the sky. 
+Twinkle, twinkle, little star, 
+    How I wonder what you are
+</code></pre>
+<ol start="7">
+<li>
+<p>Write some JavaScript to get the the volume of a sphere, given its radius r.</p>
+</li>
+<li>
+<p>Write some JavaScript to convert any number of days, hours, minutes and seconds into seconds.</p>
+</li>
+</ol>
+
+        <div class="nextprev"><p class="next">Next: <a href="/introduction-to-js/notes/strings/">Strings</a></p><p class="previous">Previous: <a href="/introduction-to-js/notes/exercises1a/">Exercise 1: JavaScript Problem Solving</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/introduction-to-js"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    <script src="/introduction-to-js/lib/termynal/termynal.js" data-termynal-container="#termynal"></script>
+  </body>
+</html>
