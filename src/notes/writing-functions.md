@@ -6,7 +6,7 @@ title: Writing functions
 
 Functions are collections of **statements** that are grouped together and (optionally) have a name that we can use to **call** that function.
 
-{% panopto "ac7826c7-c45d-47eb-b2f3-ac7200cf8604" %}
+{% panopto "099553c1-f912-4ed0-8654-adc1012872da" %}
 
 We can define functions in a couple of different ways
 
@@ -78,7 +78,7 @@ You can call a function with fewer input parameters than it usually expects, and
 
 ## Demonstration
 
-{% panopto "8a689d66-a83c-430c-a42a-ac7200d011dd" %}
+{% panopto "e77d3ed3-2f38-4c68-b49c-adc1012bd46d" %}
 
 ## Further Reading
 

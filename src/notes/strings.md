@@ -6,7 +6,7 @@ title: Strings
 
 Strings in JavaScript are sequences of text characters, contained within `'`, `"` or `` ` `` characters.
 
-{% panopto "ee5e116c-4408-4c11-9a84-ac7200cf85cf" %}
+{% panopto "77799bcc-0913-4c44-bae6-adc10128723c" %}
 
 We can use any of the three quotes (single, double or backtick) to define Strings, but we must **start** and **end** using the same character
 
@@ -79,4 +79,4 @@ console.log(m.slice(4, 8));
 
 ## String demo
 
-{% panopto "2fe5a51a-ede3-4e75-8e00-ac7200cfc709" %}
+{% panopto "aa678898-8736-473e-9f86-adc1012bd3e6" %}

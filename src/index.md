@@ -7,7 +7,7 @@ These notes introduce the JavaScript programming language. We focus on JavaScrip
 
 We look at the syntax and fundamental structures of the language and how we write JavaScript code to solve well understood problems.
 
-{% panopto "48d76b87-cccf-4a84-bf4e-ac68018362c4" %}
+{% panopto "ffdcf576-b131-4678-bb07-adc101286f2d" %}
 
 ## Writing JavaScript
 

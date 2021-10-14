@@ -8,7 +8,7 @@ There are a number of different ways to loop or iterate in JavaScript: `for`, `w
 
 ## For Loops
 
-{% panopto "3aea16ee-b8bc-4ef6-a0a4-ac6801836233" %}
+{% panopto "0e53dedb-be57-4099-8b04-adc1012870f6" %}
 
 A `for` loop has the following general structure:
 
@@ -30,7 +30,7 @@ for (let i = 0; i < 10; i++) {
 
 ## While loops
 
-{% panopto "d5fb2e60-8ba3-49ec-bd7b-ac7200cf8592" %}
+{% panopto "c4032309-1211-4b23-9c66-adc1012871ab" %}
 
 A `while` loop has the following general structure:
 
